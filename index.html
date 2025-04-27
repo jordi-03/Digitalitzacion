@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suscríbete a Nuestro Boletín</title>
+  <title>Bienvenido a Trenor.com</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,11 +15,8 @@
 
   <main>
     <div class="container">
-      <!-- Formulario de HubSpot insertado -->
-      <div id="formulario-suscripcion">
-        <script src="https://js-eu1.hsforms.net/forms/embed/146099869.js" defer></script>
-        <div class="hs-form-frame" data-region="eu1" data-form-id="f73174b3-1188-4914-ba1d-d817c529d518" data-portal-id="146099869"></div>
-      </div>
+      <!-- Aquí se cargará el formulario de HubSpot -->
+      <div id="formulario-suscripcion"></div>
     </div>
   </main>
 
@@ -27,6 +24,16 @@
     <p>&copy; 2025 Trenor.com | Todos los derechos reservados.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Script de HubSpot para cargar el formulario -->
+  <script charset="utf-8" type="text/javascript" src="https://js-eu1.hsforms.net/forms/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+      region: "eu1",
+      portalId: "146099869",
+      formId: "f73174b3-1188-4914-ba1d-d817c529d518",
+      target: "#formulario-suscripcion"
+    });
+  </script>
+
 </body>
 </html>
