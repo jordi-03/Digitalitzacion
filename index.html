@@ -5,24 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bienvenido a Trenor.com</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
   <header>
-    <h1>Bienvenido a Trenor.com</h1>
-    <p>Suscríbete para recibir noticias semanales sobre digitalización.</p>
+    <div class="header-container">
+      <h1>Trenor.com</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#suscripcion">Suscripción</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p>Suscríbete y mantente en forma digitalmente.</p>
   </header>
 
-  <main>
+  <main id="suscripcion">
     <div class="container">
-      <!-- Aquí se cargará el formulario de HubSpot -->
       <script src="https://js-eu1.hsforms.net/forms/embed/146099869.js" defer></script>
       <div class="hs-form-frame" data-region="eu1" data-form-id="f73174b3-1188-4914-ba1b-d817c529d518" data-portal-id="146099869"></div>
     </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Trenor.com | Todos los derechos reservados.</p>
+  <footer id="contacto">
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="#">Aviso Legal</a>
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Términos de Servicio</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+      <p>&copy; 2025 Trenor.com | Todos los derechos reservados.</p>
+    </div>
   </footer>
 
 </body>
